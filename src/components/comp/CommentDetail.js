@@ -1,26 +1,26 @@
 import React, { Component } from 'react'
 
-import faker from 'faker';
-
 export default class CommentDetail extends Component {
-    render() {
+    
+    render() {  
+             
         return (
             <div>
                 <div className="comment">
                     <a href="/" className="avatar">
-                        <img alt="avatar" src={faker.image.avatar()} />
+                        <img alt="avatar" src={this.props.avatar} />
                     </a>
                     <div className="content">
                         <a href="/" className="author">
-                            Sam
+                            {this.props.author}
                         </a>
                         <div className="metadata">
                             <span className="date">
-                                Today at 6:00PM
+                                {this.props.timeAgo}
                             </span>
                         </div>
                         <div className="text">
-                            Nice blog post!
+                            {this.props.content}
                         </div>
                     </div>
                 </div>

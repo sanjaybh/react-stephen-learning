@@ -1,3 +1,22 @@
+Working with React
+
+#. Installing Node JS
+-------------------------
+> npm install -g create-react-app
+> create-react-app <project name>
+OR 
+> npx create-react-app <project name>
+Note:- run one command instead of 2 (applicable for new versions only - npm > 5)
+
+create-react-app has => webpack + babel + dev server
+
+Codepen
+--------
+https://codepen.io/sanjaybh/pen/BaaPRqa
+
+
+Resources used in the app development
+---------------------------------------
 https://semantic-ui.com
 https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css
 
