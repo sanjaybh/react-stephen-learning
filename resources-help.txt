@@ -22,3 +22,16 @@ https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css
 
 Install faker to make fake data for the application
 https://github.com/marak/Faker.js/
+
+
+//Seasons
+Geolocation API
+developer.mozilla.org/en-US/docs/Web/API/Geolocation_API
+
+
+
+
+
+
+
+

@@ -2,14 +2,15 @@ import React from 'react';
 
 import './App.css';
 
-import Main from './components/comp/main';
+//import CardLayout from './components/comp/CardLayout';
+import Seasons from './components/seasons/Index';
 
 function App() {
   return (
     <div className="App">
       <header className="app-header">
         <>
-          <Main />
+          <Seasons />
         </>
       </header>
     </div>
