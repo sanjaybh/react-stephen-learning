@@ -22,10 +22,7 @@ class Index extends Component {
         if(!this.state.errorMsg && this.state.lat){
             return (
                 <div>
-                    Latitude: {this.state.lat} <br/>
-                    Longitude: {this.state.lon} <br/>
-
-                    <SeasonDisplay />               
+                    <SeasonDisplay lat={this.state.lat} lon={this.state.lon} />               
                 </div>
             )
         }
