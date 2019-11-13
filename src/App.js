@@ -2,7 +2,7 @@ import React from 'react';
 
 import './App.css';
 
-//import CardLayout from './components/comp/CardLayout';
+import CardLayout from './components/comp/CardLayout';
 import Seasons from './components/seasons/Index';
 
 function App() {
@@ -18,3 +18,9 @@ function App() {
 }
 
 export default App;
+
+/*
+Learned below components
+<CardLayout />
+<Seasons />
+*/
