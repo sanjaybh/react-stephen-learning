@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 
 import SeasonDisplay from './seasonDisplay';
-import Spinner from './Spinner';
+import Spinner from '../common/Spinner';
 
 class Index extends Component {
     state = {lat : null, lon: null, errorMsg: ''};

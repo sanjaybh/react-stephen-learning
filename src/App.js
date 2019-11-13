@@ -2,16 +2,24 @@ import React from 'react';
 
 import './App.css';
 
-import CardLayout from './components/comp/CardLayout';
-import Seasons from './components/seasons/Index';
+//import CardLayout from './components/comp/CardLayout';
+//import Seasons from './components/seasons/Index';
+//import Clock from './components/common/Clock';
+
+import HomePics from './components/pics/HomePics';
+
 
 function App() {
   return (
     <div className="App">
       <header className="app-header">
-        <>
-          <Seasons />
-        </>
+
+        <React.Fragment>
+
+          <HomePics />
+
+        </React.Fragment>
+
       </header>
     </div>
   );
