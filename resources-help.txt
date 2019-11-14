@@ -10,12 +10,12 @@ Note:- run one command instead of 2 (applicable for new versions only - npm > 5)
 
 create-react-app has => webpack + babel + dev server
 
-Codepen
+#. Codepen
 --------
 https://codepen.io/sanjaybh/pen/BaaPRqa
 
 
-Resources used in the app development
+#. Resources used in the app development
 ---------------------------------------
 https://semantic-ui.com
 https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css
@@ -24,13 +24,28 @@ Install faker to make fake data for the application
 https://github.com/marak/Faker.js/
 
 
-//Seasons
+#. Seasons
 Geolocation API
 developer.mozilla.org/en-US/docs/Web/API/Geolocation_API
 
 
-Explore this tag
+#. Explore this tag
 <script type="text/babel" data-presets="env,react">
+
+
+#. Controlled vs un-controlled elements
+context and event handlers
+
+//online editor
+stephengrider.github.io/playgrounds
+
+//Grap pictures from a free source
+https://unsplash.com/developers
+
+#. fetch (function built into modern browsers) vs axios (3rd party package)
+
+
+
 
 
 
