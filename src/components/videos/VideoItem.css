@@ -1,0 +1,17 @@
+.video-item{
+    display: flex !important;
+    align-items: center !important;
+    cursor: pointer;
+    margin: 0px 0px 10px 0px;
+    border-bottom: 1px solid lightgray;
+}
+
+.video-item.item img {
+    max-width: 180px;
+    
+}
+
+.content.spacer {
+    margin-left:5px;
+    font-style: italic;
+}
