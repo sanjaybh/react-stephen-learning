@@ -8,6 +8,7 @@ import React from 'react';
 //import HomePics from './components/pics/HomePics';
 
 //import Videos from './components/videos/AppVideo';
+import SongsApp from './components/songs/SongsApp';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
         <React.Fragment>
 
           Hello World !!!
+          <SongsApp />
 
         </React.Fragment>
 

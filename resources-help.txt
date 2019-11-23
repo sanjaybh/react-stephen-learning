@@ -46,7 +46,16 @@ https://unsplash.com/developers
 
 #. React Refs
 
+#. Redux example explained with insurance company
+------------------------------------------------
+1. Action Creator (person dropping off the form)
+2. Action (the form)
+3. Dispatch (form receiver)
+4. Reducers (Departments)
+5. State (compiled department data)
 
-
+Redux explained in below example
+/src/redux-help/example.js
+https://codepen.io/sanjaybh/pen/QWWYOmR?editors=0010
 
 
