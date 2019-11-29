@@ -8,7 +8,9 @@ import React from 'react';
 //import HomePics from './components/pics/HomePics';
 
 //import Videos from './components/videos/AppVideo';
-import SongsApp from './components/songs/SongsApp';
+//import SongsApp from './components/songs/SongsApp';
+
+import BlogPosts from './components/blog/blogApp';
 
 function App() {
   return (
@@ -16,9 +18,8 @@ function App() {
       <header className="app-header">
 
         <React.Fragment>
-
-          Hello World !!!
-          <SongsApp />
+          
+          <BlogPosts />    
 
         </React.Fragment>
 
@@ -35,4 +36,6 @@ Learned below components
 <Seasons />
 <HomePics />
 <Videos />
+<SongsApp />
+<BlogPosts />
 */

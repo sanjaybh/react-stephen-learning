@@ -58,4 +58,19 @@ Redux explained in below example
 /src/redux-help/example.js
 https://codepen.io/sanjaybh/pen/QWWYOmR?editors=0010
 
+#. Start new app with -> create-react-app songs
+add https://semantic-ui.com
+ (reference - Video 142)
+ 
+Store
+    - Provider
+    - app
+    - connect
+    - SongList
 
+// React-redux - Provider and Connect
+1. Redux does not automatically detect action creators being called
+2. Redux does not automatically detect function returning an object that is an 'action'
+
+Action Creators
+    -Select Songs
