@@ -72,5 +72,32 @@ Store
 1. Redux does not automatically detect action creators being called
 2. Redux does not automatically detect function returning an object that is an 'action'
 
-Action Creators
+Action Creators must return an action object
     -Select Songs
+
+# blog
+react-thunk - required for asynchronous action creators (video 164)
+
+Redux Cycle
+-------------
+-> Action creator (to change state of our app we call ) 
+-> action (produces an) 
+-> Dispatch (forwards action to) 
+-> Middleware (sends actions to) 
+-> Reducers (creates new) 
+-> State (wait until we need to update state again)
+
+Middleware in Redux
+--------------------
+function that gets called with every action we Dispatch
+Has the ability to STOP, MODIFY or otherwise mess around with actions
+Tons of open source middleware exist
+Most popular use of middleware is for dealing with async actions
+We are going to use a middleware called 'Redux-thunk' to solde our async issues
+
+NOte - Action creator passing something to reducers, once Reducers passes "something" to middleware (enters to thunk), it means
+thunk will ask only one question to that something.
+are you object or function ?
+if Obj then it will pass it as it is
+but in case of function thunk will take care of
+Thunk will invoke 2 arguments, fun(dispatch and setState)
