@@ -7,7 +7,9 @@ import * as serviceWorker from './serviceWorker';
 
 //Redux application uses Redux (songs/blog)
 import { Provider } from 'react-redux';
-import { createStore } from 'redux';
+import { createStore, applyMiddleware } from 'redux';
+
+import thunk from 'redux-thunk';
 
 //Songs app
 //import songReducers from './components/songs/reducers';
@@ -17,8 +19,10 @@ import blogReducers from './components/blog/reducers';
 
 import App from './App';
 
+const store = createStore(blogReducers, applyMiddleware(thunk));
+
 ReactDOM.render(
-    <Provider store={createStore(blogReducers)}>
+    <Provider store={store}>
         <App />
     </Provider>, 
     document.getElementById('root')

@@ -95,9 +95,21 @@ Tons of open source middleware exist
 Most popular use of middleware is for dealing with async actions
 We are going to use a middleware called 'Redux-thunk' to solde our async issues
 
-NOte - Action creator passing something to reducers, once Reducers passes "something" to middleware (enters to thunk), it means
+NOte - Action creator passing something to dispatch, it passes "something" to middleware (enters to thunk), it means
 thunk will ask only one question to that something.
 are you object or function ?
-if Obj then it will pass it as it is
-but in case of function thunk will take care of
-Thunk will invoke 2 arguments, fun(dispatch and setState)
+if Obj then it will pass it along to reducers
+but in case of function thunk will take care of (invokes dispatch by passing 2 args, dispatch and getState)
+Thunk will invoke 2 arguments, fun(dispatch and getState)
+that gives unlimited power over redux store, while function gets received from action 
+function invoked with dispatch then we will wait for our request to finish
+request complete dispatch action manually. (new action will be dispatched as a plain object)
+
+github.com/reduxjs/redux-thunk
+github.com/reduxjs/redux
+
+#. Lodash library
+https://lodash.com/docs/4.17.15
+
+
+
