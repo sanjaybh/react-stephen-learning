@@ -11,11 +11,18 @@ class PostList extends Component {
     componentDidMount(){
         this.props.fetchPosts()
     }
-
     renderList(){
+        const pStyle = {
+            fontSize: '12px',
+            textAlign: 'left',
+            border: '1px solid grey',
+            margin : '1px 3px',
+            padding: '3px'
+        }
+
         return this.props.posts.map(post => {
             return (
-                <div className="item" key={post.id}>
+                <div className="item" style={pStyle} key={post.id}>
                     <i className="large middle aligned icon user" />
                     <div className="content">
                         <div className="description">
@@ -24,7 +31,7 @@ class PostList extends Component {
                         </div>
                         <UserHeader userId={post.userId}/>
                     </div>                    
-                    <hr />
+                    
                 </div>
             );
         });

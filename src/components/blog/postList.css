@@ -1,0 +1,14 @@
+:local(.container) {
+    margin: 40px;
+    border: 5px dashed pink;
+  }
+  :local(.content) {
+    font-size: 15px;
+    text-align: center;
+  }
+
+/*
+<div className={styles.container}>
+    <p className={styles.content}>Get started with CSS Modules style</p>
+  </div>
+*/

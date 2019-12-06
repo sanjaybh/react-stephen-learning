@@ -111,5 +111,14 @@ github.com/reduxjs/redux
 #. Lodash library
 https://lodash.com/docs/4.17.15
 
+//Original function is going to run only once
+_.memoize()
+
+_.<>()
 
 
+# Styling any react component
+https://codeburst.io/4-four-ways-to-style-react-components-ac6f323da822
+
+# React prop-types
+npm i -S prop-types

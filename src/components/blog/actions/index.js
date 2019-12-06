@@ -1,5 +1,10 @@
 import jsonPlaceholder from '../apis/jsonPlaceholder';
-//import Axios from 'axios';
+import _ from 'lodash';
+
+
+export const fetchPostsAndUsers = () => async dispatch => {
+    dispatch(fetchPosts());
+}
 
 // Redux Thunk - return an function that is what thunk does
 export const fetchPosts = () => async (dispatch) => {
@@ -8,15 +13,26 @@ export const fetchPosts = () => async (dispatch) => {
     dispatch({
         type: 'FETCH_POSTS', payload: response.data
     });
-};
+}; 
 
-export const fetchUser = (id) => async (dispatch) => {    
+export const fetchUser = id => async dispatch => {
+    // #1 approach
     const response = await jsonPlaceholder.get(`/users/${id}`);
     
-    dispatch({
-        type: 'FETCH_USER', payload: response.data
-    });
+    dispatch({ type: 'FETCH_USER', payload: response.data });
 };
+
+/*
+//memoize ->
+export const fetchUser = id => dispatch => _fetchUser(id, dispatch);
+const _fetchUser =  _.memoize(async (id, dispatch) => {
+    // #2 approach
+    const response = await jsonPlaceholder.get(`/users/${id}`);
+    
+    dispatch({ type: 'FETCH_USER', payload: response.data });
+});
+*/
+
 
 //Altenative way
 /*
